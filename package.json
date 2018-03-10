@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "serv": "static dist"
   },
@@ -14,6 +14,7 @@
     "pug": "^2.0.1",
     "pug-loader": "https://github.com/pugjs/pug-loader.git",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11"
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
   }
 }
