@@ -1,7 +1,7 @@
 export default function (array, className) {
     const menu = document.createElement("ul");
     menu.className = className;
-    let listItems = '';
+    var listItems = '';
     array.forEach(function(item) {
         listItems += '<li>' + item + '</li>';
     });
