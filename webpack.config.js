@@ -22,7 +22,13 @@ module.exports = {
         rules: [
             {
                 test: /\.pug$/,
-                loader: 'pug-loader'
+                use: {
+                    loader: 'pug-loader',
+                    query: {} //it fix: Module build failed: TypeError: Cannot read property 'doctype' of null
+                },
+                /*options: {
+                    pretty: true
+                }*/
             }
         ]
     }
