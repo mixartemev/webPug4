@@ -32,12 +32,12 @@ module.exports = {
         rules: [
             {//--module-bind pug=pug-loader
                 test: /\.pug$/,
-                use: {
+                //use: {
                     loader: 'pug-loader',
                     options: {
                         pretty: true
                     }
-                }
+                //}
             }
         ]
     }
